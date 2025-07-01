@@ -26,13 +26,22 @@ background: #ffffff;
     margin-left: 50px;
 }
 .header_item{
-    color: rgb(16, 16, 16);
+    color: #101010;
 font-family: "Plus Jakarta Sans";
 font-size: 16px;
 font-weight: 500;
 line-height: 150%;
 }
+.number:hover{
+    color: green;
+}
+.number_box:hover{
+    border: 2px solid green;
+    background-color: white;
+    color: green;
+}
 .number_box{
+    transition: 0.5s ease-in-out;
     position: absolute;
 width: 160px;
 height: 40px;
@@ -135,6 +144,7 @@ padding: 12px 24px 12px 24px;
     border-radius: 6px;
     background: #e1e7ed;
     list-style: none;
+    transition: 1s ease-out;
 }
 .item_title{
     color: #101010;
@@ -160,19 +170,6 @@ padding: 12px 24px 12px 24px;
     line-height: 140%;
     letter-spacing: 0%;
     text-decoration: none;
-}
-.yashil{
-    border-radius: 6px;
-background: #1aab7b;
-}
-.oq{
-    color: #ffffff;
-}
-.gray{
-    color: #ffffff;
-}
-.oqq{
-    color: #ffffff;
 }
 .section_2_title{
     color: #101010;
@@ -260,4 +257,10 @@ opacity: 0.2;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.item:hover{
+    background-color: #1aab7b;
+    .item_title{color: #ffffff;}
+    .item_text{color: #ffffff;}
+    .item_link{color: #ffffff;}
 }
